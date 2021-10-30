@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./styles.css" 
-import crypto from 'crypto'
+
+import signUp from '../../utils/signUp'
 
 
 
@@ -10,8 +11,8 @@ export default function SignUp() {
     const [nickname, setNickname] = useState('')
     const handleClick = (e) =>{
             e.preventDefault()
-            let hashPass = crypto.createHash('sha256').update(password).digest('hex')
-        console.log(hashPass, name, nickname)
+            signUp(name,nickname,password)
+      
     }
     return (
         <div>

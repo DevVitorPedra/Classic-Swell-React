@@ -2,7 +2,7 @@
 const submitSignIn = async(name) =>{
     try {
        
-        const response = await fetch(`http://localhost:5000/users/`)
+        const response = await fetch(`http://localhost:5000/users/${name}`)
         const data = await response.json()
         console.log(data)
         

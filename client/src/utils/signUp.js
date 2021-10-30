@@ -1,6 +1,16 @@
-const signUp = async (name,nickname, password) =>{
+import crypto from 'crypto'
+const signUp = async (name,nickname, pass) =>{
     try {
-        const response = await fetch(`http://localhost:5000/users/${name}`)
+        let password = crypto.createHash('sha256').update(pass).digest('hex')
+        console.log(`name: ${name},nickname:${nickname},password:${password}`)
+        const body = {name,nickname,password}
+        const response = await fetch(`http://localhost:5000/users/`,{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(body)
+            
+        })
+        console.log(response)
         
     } catch (err) {
         console.error(err.message)
@@ -8,3 +18,5 @@ const signUp = async (name,nickname, password) =>{
     }
 
 }
+
+export default signUp

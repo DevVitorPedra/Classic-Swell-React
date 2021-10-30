@@ -11,9 +11,9 @@ app.use(express.json())
 //Create User
 app.post("/users",async (req,res)=>{
     try {
-        const { name, password }  = req.body
+        const { name, nickname, password }  = req.body
         const newUser = await pool.query(
-            "INSERT INTO users (user_name, user_password) VALUES($1, $2) RETURNING *", [name, password]
+            "INSERT INTO users (user_name, user_nickname,user_password) VALUES($1, $2, $3) RETURNING *", [name, nickname, password]
         )
        console.log(req.body)
             res.json(newUser.rows)
