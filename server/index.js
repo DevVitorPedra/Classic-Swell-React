@@ -41,6 +41,7 @@ app.get("/users/:name", async (req,res)=>{
         const { name } = req.params
         const user = await pool.query("SELECT * FROM users WHERE user_name = $1 ", [name])
         res.json(user.rows[0])
+       
     } catch (err) {
         console.error(err.message)
         

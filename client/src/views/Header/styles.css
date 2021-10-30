@@ -1,0 +1,32 @@
+.main-header{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    
+}
+.title-name{
+    font-size: 10vw;
+    margin-bottom: 1vw;
+}
+.logo-img{
+   background-position: center;
+   background-size: contain;
+    height: 12vw;
+    width: 12vw;
+    background-image: url('../../assets/images/wave.png');
+}
+ul{
+    list-style:none;
+}
+.menu-list{
+    
+    display: flex;
+    flex-direction: row;
+}
+a:visited{
+    
+    color: blue;
+}
