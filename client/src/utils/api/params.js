@@ -14,60 +14,66 @@ export const mainParams = ['cloudCover', 'seaLevel', 'swellDirection', 'swellHei
 
 export const beaches = {
     praiaBarra: {
+        name:'Praia da Barra da Lagoa',
         lat: -27.574,
         lng: -48.4234
     },
     praiaMole: {
+        name:'Praia Mole',
         lat: -27.6025,
         lng: -48.4361
     },
     praiaJoaquina: {
+        name:'Praia da Joaquina',
         lat: -27.629,
         lng: -48.4488
     },
     praiaRififi: {
+        name:'Praia do Rififi',
         lat: -27.644165692711454,
         lng: -48.461709755745936
     },
-    praiaNovoCampeche: {
-        lat: -27.66554991568937,
-        lng: -48.47416066885339
-    },
+   
     praiaDoCampeche: {
+        name:'Praia do Campeche',
         lat: -27.6898,
         lng: -48.4816
     },
     praiaMorroDasPedras: {
+        name:'Praia do Morro das Pedras',
         lat: -276917,
         lng: -48.4821
     },
     praiaDoCaldeirao: {
+        name:'Praia do Caldeirão',
         lat: -27.644165692711454,
         lng: -48.461709755745936
     },
     praiaDaArmação: {
+        name:'Praia da Armação',
         lat: -27.74405970175009,
         lng: -48.50712763801079
     },
     praiaDoMatadeiro: {
+        name:'Praia do Matadeiro',
         lat: -27.754075056229542,
         lng: -48.4972541723044
 
     },
     praiaLagoinhaDoLeste: {
+        name:'Praia da Lagoinha do Leste',
         lat: -27.7731800829555,
         lng: -48.48529191585539
     },
     praiaDosAçores: {
+        name:'Praia dos Açores',
         lat: -27.783988620771307,
         lng: -48.52298947846258
     },
 
-    praiaDoSaquinho: {
-        lat: -27.803356049374436,
-        lng: -48.536281717428174
-    },
+    
     praiaNaufragados: {
+        name:'Praia de Naufragados',
         lat: -27.834486360305473,
         lng: -48.564101752855265
     }

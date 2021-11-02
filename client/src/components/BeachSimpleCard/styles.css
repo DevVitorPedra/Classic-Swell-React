@@ -1,0 +1,13 @@
+.beach-simple-card{
+    border: 2px solid darkslategray;
+    border-radius: 12px;
+    width: 90vw;
+    height: 30vh;
+}
+.beach-img{
+    width:50vw;
+    height: 50vw;
+    border-radius: 12px;
+    background-position: center;
+    background-size: contain;
+}
