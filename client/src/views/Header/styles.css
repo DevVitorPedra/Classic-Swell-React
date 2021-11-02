@@ -1,32 +1,43 @@
 .main-header{
     display: flex;
     flex-direction: column;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 1%, rgba(28,166,160,1) 47%);
 }
 .logo{
     display: flex;
     justify-content: center;
     
+    
 }
 .title-name{
-    font-size: 10vw;
+    
+    font-size: 9vw;
     margin-bottom: 1vw;
 }
 .logo-img{
+    
    background-position: center;
    background-size: contain;
     height: 12vw;
     width: 12vw;
     background-image: url('../../assets/images/wave.png');
 }
-ul{
-    list-style:none;
-}
+
+
 .menu-list{
-    
+    font-size: 5vw;
+    list-style:none;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
+    
+}
+a{
+    text-decoration: none;
 }
 a:visited{
+    font-size: 4vw;
     
-    color: blue;
+    color:white;
 }

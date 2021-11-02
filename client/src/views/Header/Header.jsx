@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './styles.css'
+import Avatar from '../../components/Avatar/Avatar'
 
 export default function Header() {
     return (
@@ -11,16 +12,15 @@ export default function Header() {
                     <h1 className="title-name" >lassic Swell</h1>
                 </div>
             <nav className="navigation-menu">
+            
             <ul className="menu-list">
-             <Link to={'/'}><li>Best Beaches</li></Link> 
-             <Link to={'/weekforecast'}><li>Week Forecast</li></Link> 
+             <Link to={'/'}><li>Top 5</li></Link> 
+             <Link to={'/weekforecast'}><li>Forecast</li></Link> 
              <Link to={'/news'}><li>News</li></Link>
             </ul>
-            <div className="login">
-                <img alt='Avatar'></img>
-                <p></p>
-               <Link to={'/login'}><button>Login</button></Link> 
-               <Link to={'/signup'}> <button>SignUp</button> </Link>
+            <div className="btn-login">
+                {sessionStorage.getItem('SessionToken') ?<Avatar/> :
+                <Link to ={'/login'}>Dive in</Link>}
             </div>
             </nav>
           

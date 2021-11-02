@@ -7,8 +7,13 @@ import News from "./views/News/News";
 import SignUp from "./components/SignUp/SignUp";
 import './App.css'
 
+
+
 function App() {
+
+  
   return (
+  
     <div className="App">
       <Header/>
       <div className="display">
@@ -21,6 +26,8 @@ function App() {
       </Switch>
       </div>
     </div>
+  
+    
   )
 }
 
