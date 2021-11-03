@@ -1,10 +1,10 @@
 import React from 'react'
-import { AreaChart, Area, XAxis, YAxis,CartesianGrid } from 'recharts'
+import { AreaChart, Area, XAxis, YAxis,CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 
 export default function ForecastChart(props) {
 
     return (
-      
+      <ResponsiveContainer width="100%" height={200} >
         <AreaChart
         width={1400}
         height={250}
@@ -14,12 +14,13 @@ export default function ForecastChart(props) {
                 <CartesianGrid strokeDasharray="3 3"/>
                 <XAxis datakey={props.time}/>
                 <YAxis/>
-                
+                <Tooltip/>
                 <Area 
                 type='monotone'
                 dataKey={props.dataType}
                 stroke='#8884d8'
                 fill='#8884d8'/>
         </AreaChart>
+        </ResponsiveContainer>
     )
 }

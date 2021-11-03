@@ -1,6 +1,6 @@
 
-export const singleData = 
-     [
+export const singleData =
+    [
         {
             "cloudCover": {
                 "noaa": 44.8,
@@ -12670,77 +12670,82 @@ export const singleData =
                 "sg": 2.31
             }
         }
-     ]
+    ]
 
 
-    export const cloudCoverProcessor = () =>{
-        const cloudCover =[]
-            singleData.map((element, idx)=>{
-    
-          return  cloudCover.push({time: idx,cloudCover:element.cloudCover.noaa})
-            })
-            return cloudCover
-     }
-     export const seaLevelProcessor = () =>{
-        const seaLevel =[]
-         singleData.map((element)=>{
-           return seaLevel.push({time:element.time,seaLevel:element.seaLevel.sg})
-         })
-         return seaLevel
-     }
-     export const swellDirectionProcessor = () =>{ 
-     const swellDirection =[]
-        singleData.map((element)=>{
-         return  swellDirection.push({time:element.time,swellDirection:element.swellDirection.sg})
-        })
-        return swellDirection
-    }
-    export const swellHeightProcessor = () =>{
-        const swellHeight =[]
-        singleData.map((element)=>{
-            return swellHeight.push({time:element.time,swellHeight:element.swellHeight.sg})
-        })
-        return swellHeight
-    }
-    export const swellPeriodProcessor = () =>{
-        const swellPeriod =[]
-        singleData.map((element)=>{
-            return  swellPeriod.push({time:element.time,swellPeriod:element.swellPeriod.sg})
-        })
-        return swellPeriod
-    }
-    export const waterTeperatureProcessor = () =>{
-        const waterTemperature =[]
-        singleData.map((element)=>{
-            return waterTemperature.push({time:element.time,waterTemperature:element.waterTemperature.sg})
-        })
-        return waterTemperature
-    }
-    export const waveDirectionProcessor = () =>{
-        const waveDirection =[]
-        singleData.map((element)=>{
-            return  waveDirection.push({time:element.time,waveDirection:element.waveDirection.sg})
-        })
-        return waveDirection
-    }
-    export const wavePeriodProcessor = () =>{
-        const wavePeriod =[]
-        singleData.map((element)=>{
-            return wavePeriod.push({time:element.time,wavePeriod:element.wavePeriod.sg})
-        })
-        return wavePeriod
-    }
-    export const windDirectionProcessor = () =>{
-        const windDirection =[]
-        singleData.map((element)=>{
-            return  windDirection.push({time:element.time,windDirection:element.windDirection.sg})
-        })
-        return windDirection
-    }
-    export const windSpeedProcessor = () =>{
-        const windSpeed =[]
-        singleData.map((element)=>{
-            return windSpeed.push({time:element.time,windSpeed:element.windSpeed.sg})
-        })
-        return windSpeed
-    }
+export const cloudCoverProcessor = () => {
+    const cloudCover = []
+    singleData.map((element) => {
+        let date = new Date(element.time)
+        let day = date.getDate()
+        console.log(day)
+        return cloudCover.push({ time:1, cloudCover: element.cloudCover.noaa })
+    })
+    return cloudCover
+}
+export const seaLevelProcessor = () => {
+    const seaLevel = []
+    singleData.map((element) => {
+        return seaLevel.push({ time: element.time, seaLevel: element.seaLevel.sg })
+    })
+    return seaLevel
+}
+export const swellDirectionProcessor = () => {
+    const swellDirection = []
+    singleData.map((element) => {
+        return swellDirection.push({ time: element.time, swellDirection: element.swellDirection.sg })
+    })
+    return swellDirection
+}
+export const swellHeightProcessor = () => {
+    const swellHeight = []
+
+    singleData.map((element) => {
+        let date = new Date(element.time)
+        let day = date.getDate()
+        return swellHeight.push({ time: day, swellHeight: element.swellHeight.sg })
+    })
+    return swellHeight
+}
+export const swellPeriodProcessor = () => {
+    const swellPeriod = []
+    singleData.map((element) => {
+        return swellPeriod.push({ time: element.time, swellPeriod: element.swellPeriod.sg })
+    })
+    return swellPeriod
+}
+export const waterTeperatureProcessor = () => {
+    const waterTemperature = []
+    singleData.map((element) => {
+        return waterTemperature.push({ time: element.time, waterTemperature: element.waterTemperature.sg })
+    })
+    return waterTemperature
+}
+export const waveDirectionProcessor = () => {
+    const waveDirection = []
+    singleData.map((element) => {
+        return waveDirection.push({ time: element.time, waveDirection: element.waveDirection.sg })
+    })
+    return waveDirection
+}
+export const wavePeriodProcessor = () => {
+    const wavePeriod = []
+    singleData.map((element) => {
+        return wavePeriod.push({ time: element.time, wavePeriod: element.wavePeriod.sg })
+    })
+    return wavePeriod
+}
+export const windDirectionProcessor = () => {
+    const windDirection = []
+    singleData.map((element) => {
+        return windDirection.push({ time: element.time, windDirection: element.windDirection.sg })
+    })
+    return windDirection
+}
+export const windSpeedProcessor = () => {
+    const windSpeed = []
+    singleData.map((element) => {
+        return windSpeed.push({ time: element.time, windSpeed: element.windSpeed.sg })
+    })
+    return windSpeed
+}
