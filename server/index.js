@@ -14,11 +14,11 @@ app.post("/users",async (req,res)=>{
   
     try {
        
-        const { name, nickname, password }  = req.body
+        const { name, nickname,email, password }  = req.body
       
         console.log("crypto")
         const newUser = await pool.query(
-            "INSERT INTO users (user_name, user_nickname,user_password) VALUES($1, $2, $3) RETURNING *", [name, nickname, password]
+            "INSERT INTO users (user_name, user_nickname,user_email,user_password) VALUES($1, $2, $3, $4) RETURNING *", [name, nickname, email, password]
         )
        console.log(req.body)
             res.json(newUser.rows)
