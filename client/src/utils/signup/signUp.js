@@ -1,9 +1,9 @@
 import crypto from 'crypto'
-const signUp = async (name, nickname, password) => {
+const signUp = async (name, nickname,email, password) => {
     try {
         console.log("chamou")
         password = crypto.createHash('sha256').update(password).digest('hex')
-        const body = { name, nickname, password }
+        const body = { name, nickname,email, password }
         
         const response = await fetch(`http://localhost:5000/users`, {
             method: "POST",
