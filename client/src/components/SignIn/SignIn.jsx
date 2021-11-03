@@ -1,6 +1,9 @@
 import React, { createContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import submitSignIn from '../../utils/login/login'
+import { Formik } from 'formik'
+import * as Yup from "yup";
+import { Formik, Field, ErrorMessage } from "formik";
 
 export const AuthContext = createContext()
 
@@ -19,6 +22,7 @@ export default function SignIn() {
     }
     return (
         <div>
+            <Formik >
         <form >
        <span><i className="bi bi-person-badge-fill"></i><input value={name} onChange={(event)=>{event.preventDefault()
            setName(event.target.value)
@@ -31,6 +35,7 @@ export default function SignIn() {
        </form>
        <p>dont have an account yet?</p>
        <Link to={'/signup'}> <button>SignUp</button> </Link>
+       </Formik>
        </div>
     )
 }

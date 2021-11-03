@@ -12675,26 +12675,24 @@ export const singleData =
 
 export const cloudCoverProcessor = () => {
     const cloudCover = []
-    singleData.map((element) => {
-        let date = new Date(element.time)
-        let day = date.getDate()
-        console.log(day)
-        return cloudCover.push({ time:1, cloudCover: element.cloudCover.noaa })
-    })
+    for(let i = 0; i<24; i++){
+       console.log(singleData[i])
+     cloudCover.push({ cloudCover: singleData[i].cloudCover.noaa })
+    }
     return cloudCover
 }
 export const seaLevelProcessor = () => {
     const seaLevel = []
-    singleData.map((element) => {
-        return seaLevel.push({ time: element.time, seaLevel: element.seaLevel.sg })
-    })
+    for(let i = 0; i <24; i++){
+     seaLevel.push({ seaLevel: singleData[i].seaLevel.sg })
+    }
     return seaLevel
 }
 export const swellDirectionProcessor = () => {
     const swellDirection = []
-    singleData.map((element) => {
-        return swellDirection.push({ time: element.time, swellDirection: element.swellDirection.sg })
-    })
+    for(let i = 0; i <24; i++){
+     swellDirection.push({ swellDirection: singleData[i].swellDirection.sg })
+    }
     return swellDirection
 }
 export const swellHeightProcessor = () => {

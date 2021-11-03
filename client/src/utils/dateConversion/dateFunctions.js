@@ -1,23 +1,24 @@
 export const forecastDays = (date) =>{
-    if(date===0){  
+    let data = new Date(date).getDay()
+    if(data===0){  
         return 'Sunday'
     }
-    if(date===1){
+    if(data===1){
         return 'Monday'
     }
-    if(date===2){
+    if(data===2){
         return 'Tuesday' 
        }
-    if(date===3){
+    if(data===3){
         return 'Wednesday'
         }
-    if(date===4){
+    if(data===4){
         return 'Thursday'
     }
-    if(date===5){
+    if(data===5){
         return 'Friday'
     }
-    if(date===6){
+    if(data===6){
         return 'Saturday'
     }
 }
