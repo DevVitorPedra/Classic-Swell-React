@@ -1,8 +1,7 @@
 # {VSP}
 # Classic Swell
 ## App developed to show news, marine forecast, and best conditions for surf practice in the south side of Florianópolis island.
-### Applying the skills developed in three weeks learning ReactJS, using the most common production metodologies SCRUM and CI/CD
-### using KANBAN board to manage tasks!
+### Applying the skills developed in three weeks learning ReactJS, using the most common production metodologies SCRUM and CI/CD,using KANBAN board to manage tasks!
 
 
 
@@ -14,8 +13,8 @@
 > Subscribing to our newsletter, you will receive daily conditions of your favorites beaches
 
 ### Ajustes e melhorias
-This project was started in 10/28/2021
-The project isn't done yet, all features are been developed individually, to fulfill the CI/CD method
+This project was started in 10/28/2021. 
+The project isn't done yet, all features are been developed individually, to fulfill the CI/CD method. 
 As i am a team of one, sometimes i need to do improve other components to fit in some features
 - [x] Login Page
 - [x] Sign Up Page
