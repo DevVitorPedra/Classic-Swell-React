@@ -12,28 +12,21 @@
 > In the news page you can see the news about, surf, stores, products and technologies.
 > Subscribing to our newsletter, you will receive daily conditions of your favorites beaches
 
-### Ajustes e melhorias
+### CI/CD Schedule
 This project was started in 10/28/2021. 
 The project isn't done yet, all features are been developed individually, to fulfill the CI/CD method. 
 As i am a team of one, sometimes i need to do improve other components to fit in some features
 - [x] Login Page
 - [x] Sign Up Page
+- [ ] Week Forecast
 - [ ] News Page
 - [ ] Five Best
-- [ ] Week Forecast
 - [ ] Favorites
 - [ ] Newsletter
 - [ ] Dinamic Search
 - [ ] Subscribers Page
 - [ ] Maps
 - [ ] ...
-
-
-
-## 💻 Pré-requisitos
-
- - Não há pre-requisitos para utilização do sistema
-
 
 
 ## ☕ Accessing the Classic Swell
