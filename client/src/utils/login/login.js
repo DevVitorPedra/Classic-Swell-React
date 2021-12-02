@@ -8,12 +8,12 @@ const submitSignIn = async(name, password) =>{
         const inputPass =   password = crypto.createHash('sha256').update(password).digest('hex')
         if (inputPass===data.user_password){
           sessionStorage.setItem('SessionToken',`{name:${name}}`)
-        }else if(!data.user_name){
-            
+          
+        }else if(name !== data.user_name){
             console.log('incorrect credentials')
         }
     } catch (err) {
-        console.log(err.message)
+        console.log('incorrect credentials')
         
     }
 

@@ -24,6 +24,7 @@ export default function SignUp() {
         onSubmit:({name, nickname, email, password})=>{
             signUp(name,nickname,email,password)
         }
+     
     })
  
     return (
